@@ -1,0 +1,16 @@
+class Solution {
+    public boolean hasDuplicate(int[] nums) {
+        Set<Integer> set=new HashSet<>();
+        for (int num:nums){
+            set.add(num);
+        }
+        if (set.size()==nums.length){
+            return false;
+        }
+        else{
+            System.out.println(set.size());
+            return true;
+        }
+
+    }
+}
